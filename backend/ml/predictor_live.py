@@ -3,7 +3,7 @@ import joblib
 import os
 
 model_path = os.path.join("ml", "models", "live_price_predictor.pkl")
-model = joblib.load(model_path)
+model = joblib.load("ml/models/live_price_predictor.pkl")
 
 # Use the same feature columns used during training
 FEATURE_COLUMNS = [
