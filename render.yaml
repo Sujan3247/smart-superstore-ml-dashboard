@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: superstore-fastapi-backend
+    env: python
+    repo: https://github.com/Sujan3247/smart-superstore-ml-dashboard
+    branch: main
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "bash backend/start.sh"
+    envVars:
+      - key: PORT
+        value: 10000
